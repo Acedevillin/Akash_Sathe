@@ -1,0 +1,76 @@
+.wrapper2{
+    width: 950px;
+    margin: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.accordn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 900px;
+    margin: 30px;
+    background-color: #13d48f;
+    padding: 10px;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.accordTitle{
+    display: flex;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordTitle::after{
+    content: url('./Images/arrow.svg');
+    transform: scale(.7);
+    cursor: pointer;
+    position: absolute;
+    right:5rem;
+    transition: transform 0.5s ease-in;
+}
+
+.accordTitle.active::after{
+    content: url('./Images/arrow.svg');
+    transform: rotate(180deg) scale(.7);
+}
+
+.accordTitle h2{
+    font-weight: 900;
+    margin-left: 2rem;
+    float: left;
+}
+.accordContent{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    
+}
+.accordContent ul{
+    line-height: 2rem;
+    padding: 3px 10px;
+}
+
+
+.accordContent span{
+    display: flex;
+    margin-bottom: 5px;
+    margin-left: 5px;    
+}
+
+.accordContent p{
+    border-top: 3px solid #ffffff93;  
+    width: 100%;
+    padding-left: 10px;
+    margin-top: 10px;
+    padding-top: 5px;
+}
+
+
+.accordTitle.active + .accordContent{
+    max-height: auto;
+}

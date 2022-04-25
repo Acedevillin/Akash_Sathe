@@ -4,10 +4,10 @@ let t1 = gsap.timeline({
   scrollTrigger: {
     trigger: '.content2',
     start: 'top center',
-    end: '+=700',
+    end: 'bottom bottom',
     scrub: 1,
     snap: {
-      snapTo: '.image',
+      snapTo: 'labels',
       duration: { min: 0.2, max: 3 },
       delay: 0.2,
       ease: 'power1.inout',
@@ -16,19 +16,10 @@ let t1 = gsap.timeline({
 });
 
 t1.from('.image', { x: -100, opacity: 0, duration: 1.5 });
+t1.from('.abt-text', { opacity: 0, y: 50, duration: 1.5, stagger: 0.5 });
 
-let t2 = gsap.timeline({
-  scrollTrigger: {
-    trigger: '.content2',
-    start: 'top center',
-    end: '+=500',
-    scrub: 1,
-    snap: {
-      snapTo: '.abt-text',
-      duration: { min: 0.2, max: 1 },
-      delay: 0.2,
-      ease: 'power1.inOut',
-    },
-  },
+const know = document.querySelector('.cta');
+
+know.addEventListener('click', (event) => {
+  location.href('C:PortfolioWebsite(design2)about.html');
 });
-t2.from('.abt-text', { opacity: 0, y: 50, duration: 1.5, stagger: 0.5 });

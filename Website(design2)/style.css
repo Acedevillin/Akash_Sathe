@@ -31,7 +31,8 @@ nav {
 }
 
 .logo {
-  margin: 0.2rem 0.2rem;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
   padding-left: 1.4rem;
 }
 
@@ -53,7 +54,7 @@ nav {
 
 .nav-items a {
   text-decoration: none;
-  color: #14aa75;
+  color: #17a775;
   font-size: 18px;
 }
 
@@ -62,7 +63,7 @@ nav {
   display: -ms-flexbox;
   display: flex;
   width: 100vw;
-  height: 100vh;
+  height: 85vh;
 }
 
 .context {
@@ -92,7 +93,7 @@ nav {
 }
 
 .headline {
-  color: #d2d2d2;
+  color: #c8c8c8;
   margin-left: 45%;
   font-weight: 300;
   font-size: 3rem;
@@ -100,8 +101,8 @@ nav {
 }
 
 button {
-  background-color: #14aa75;
-  color: #d2d2d2;
+  background-color: #17a775;
+  color: #c8c8c8;
   border: none;
   border-radius: 15px;
   -ms-flex-item-align: center;
@@ -120,8 +121,8 @@ button {
 
 .cta:hover {
   background-color: transparent;
-  border: 2px solid #14aa75;
-  color: #14aa75;
+  border: 2px solid #17a775;
+  color: #17a775;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -143,6 +144,137 @@ button {
   height: 648px;
   margin-left: 25%;
   margin-top: 15%;
+}
+
+.content-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100vw;
+  height: 200vh;
+  color: #c8c8c8;
+  padding-top: 40px;
+}
+
+.underline1 {
+  background-color: #c8c8c8;
+  height: 5px;
+  margin-top: 4px;
+  width: 180px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-radius: 20px;
+}
+
+.mywork {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 100px;
+  height: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.loginpage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  height: 300px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.coffee {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  height: 300px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.discription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+  height: 100%;
+  margin-left: 100px;
+  padding: 0px 50px;
+  padding-top: 40px;
+}
+
+.disheadline {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.discription-text {
+  font-size: 1rem;
+  font-weight: 200;
+  letter-spacing: 3px;
+  margin-top: 30px;
+}
+
+.thumbnail {
+  width: 320px;
+  height: 231px;
+  border-radius: 15px;
+  -webkit-filter: drop-shadow(7px -2px 4px rgba(135, 135, 135, 0.25));
+          filter: drop-shadow(7px -2px 4px rgba(135, 135, 135, 0.25));
+}
+
+.batman {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  height: 300px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.coffee {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  height: 300px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .content2 {
@@ -200,7 +332,7 @@ button {
   width: 100%;
   padding: 0 2rem;
   font-weight: 300;
-  color: #d2d2d2;
+  color: #c8c8c8;
 }
 
 .cta2 {
@@ -213,8 +345,8 @@ button {
 
 .cta2:hover {
   background-color: transparent;
-  border: 2px solid #14aa75;
-  color: #14aa75;
+  border: 2px solid #17a775;
+  color: #17a775;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -235,19 +367,46 @@ button {
           justify-content: space-evenly;
   height: 100vh;
   width: 100vw;
-  padding: 8rem 0rem;
-  color: #d2d2d2;
+  padding: 2rem 0rem;
+  color: #c8c8c8;
 }
 
-.accordian {
-  background-color: #14aa75;
+.heading {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.underline {
+  background-color: #c8c8c8;
+  height: 5px;
+  margin-top: 4px;
+  width: 230px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-radius: 20px;
+}
+
+.accordian1 {
+  background-color: #17a775;
   width: 800px;
   height: 80px;
   border-radius: 15px;
   padding: 0.6rem 4rem;
 }
 
-.accordianTitle {
+.accordianTitle1 {
   font-size: 1rem;
 }
 
@@ -263,14 +422,14 @@ button {
   font-style: italic;
 }
 
-.accordianContent span {
+.accordianContent1 span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
 
-.accordianContent span p {
+.accordianContent1 span p {
   width: 100%;
   padding-top: 6px;
 }

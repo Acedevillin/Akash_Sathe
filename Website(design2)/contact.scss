@@ -1,0 +1,78 @@
+.headline3 {
+    margin-top: 100px;
+    color: #13d48f;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    align-items: center;
+  }
+  .headline3 h1 {
+    font-size: 60px;
+    font-weight: 300;
+    letter-spacing: 10px;
+  }
+  .line1 {
+    padding-bottom: 30px;
+    width: 250px;
+    height: 40px;
+  }
+  .line2 {
+    padding-bottom: 30px;
+    width: 250px;
+    height: 40px;
+  }
+  .rocket {
+    padding-bottom: 15px;
+  }
+  
+  .links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 100px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50vh;
+    color: #13d48f;
+  }
+  .email {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+  }
+  .email h3 {
+    padding: 0.2rem 1rem;
+    font-weight: 100;
+    font-size: 25px;
+  }
+  .phone {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+  }
+  .phone h3 {
+    padding: 0.2rem 1rem;
+    font-weight: 100;
+    font-size: 25px;
+  }
+  .linkedin {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+  }
+  .linkedin h3 {
+    padding: 0.2rem 1rem;
+    font-weight: 100;
+    font-size: 25px;
+  }
+  
+  .linkedin a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
