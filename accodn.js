@@ -19,3 +19,8 @@ accordnheader.forEach((accordnheader) => {
     }
   });
 });
+
+const btn = document.querySelector('.button1');
+btn.addEventListener('click', () => {
+  window.open('./Akash_Sathe.pdf', '_blank');
+});
