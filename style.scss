@@ -3,37 +3,43 @@ $primarycolor:#17a775;
 $secondaryColor: rgb(200, 200, 200);
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto Mono', monospace;
 }
 
-body{
+body {
     background-color: $bgcolor;
     overflow-x: hidden;
-    
+
 }
-.wrapper{
+
+.wrapper {
     display: flex;
     flex-direction: column;
     width: 100vw;
-   
+
 }
+
 // Navigation bar css !--- Start----!
 
-nav{
+nav {
     display: flex;
     height: 15vh;
     width: 100%;
+    justify-content: space-around;
+    align-items: center;
 }
-.logo{
+
+.logo {
     margin-top: 1rem;
     margin-left: 1.5rem;
     padding-left: 1.4rem;
 }
-.nav-items{
+
+.nav-items {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
@@ -42,31 +48,92 @@ nav{
     margin: 1rem 1rem;
     padding-top: 1rem;
 
-    a{
+    a {
         text-decoration: none;
         color: $primarycolor;
         font-size: 18px;
     }
 }
 
+.burger{
+    margin-right: 30px;
+    display: none;
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:40px;
+        height: 4px;
+        background-color: $primarycolor;
+        margin: 6px;
+        border-radius: 15px;
+        transition: 0.5s;
+    }
+}
+@media screen and (max-width:500px) {
+    
+    .nav-items{        
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            height: 85vh;
+            right: 0%;
+            top: 14vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            transform: translateX(100%);   
+            transition: transform 0.5s ease-in;  
+            background-color: $bgcolor;
+            z-index: 1;   
+    }
+    .nav-items li {
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+    .logo{
+        margin-left: 0rem;
+        padding-left: 0rem;
+    }
+
+}
+.nav-active{
+    transform: translate(0);
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-9px, 10px);
+}
+.toggle .line2{
+    
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
 // !---End---!
 
 //First Content Section Starts Here----!!
 
-.content{
+.content {
     display: flex;
     width: 100vw;
     height: 85vh;
 }
 
-.context{
+.context {
     display: flex;
     flex-direction: column;
     width: 100%;
-    
+
 }
 
-.headline-text{
+.headline-text {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -76,16 +143,15 @@ nav{
     padding-top: 10%;
 }
 
-.headline{
+.headline {
     color: $secondaryColor;
     margin-left: 45%;
     font-weight: 300;
     font-size: 3rem;
     width: 100%;
-
 }
 
-button{
+button {
     background-color: $primarycolor;
     color: $secondaryColor;
     border: none;
@@ -93,7 +159,8 @@ button{
     align-self: center;
     cursor: pointer;
 }
-.cta{
+
+.cta {
     font-weight: 700;
     width: 200px;
     height: 90px;
@@ -101,30 +168,59 @@ button{
     margin-left: 50%;
 }
 
-.cta:hover{
+.cta:hover {
     background-color: transparent;
     border: 2px solid $primarycolor;
     color: $primarycolor;
     transition: 0.5s;
 }
 
-.cover{
-    display:flex;
+.cover {
+    display: flex;
     height: 100%;
     width: 100%;
     padding: 8% 10%;
     align-items: center;
 }
 
-.cover-image{
+.cover-image {
     width: 658px;
     height: 648px;
     margin-left: 25%;
     margin-top: 15%;
 }
 
+@media screen and (max-width:500px) {
+    .content{
+        width: 100%;
+    }
+    .headline-text {
+        margin-top: 50%;
+        padding-top: 10%;
+        margin-left: 0;
+        width: 100%;
+    }
+    .headline {
+    margin-left: 25%;
+    font-weight: 300;
+    font-size: 2rem;
+    width: 100%;
+    align-items: center;
+}
+.cover-image{
+   display: none;
+}
+.cta {
+    font-weight: 500;
+    width: 150px;
+    height: 60px;
+    font-size: 1rem;
+    margin-left: 0%;
+}
+}
+
 // My Work Section starts here
-.content-2{
+.content-2 {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -134,7 +230,7 @@ button{
     padding-top: 40px;
 }
 
-.underline1{
+.underline1 {
     background-color: $secondaryColor;
     height: 5px;
     margin-top: 4px;
@@ -144,31 +240,26 @@ button{
 }
 
 
-.mywork{
+.mywork {
     display: flex;
     flex-direction: column;
     padding: 100px;
     height: 100%;
     justify-content: space-evenly;
 }
-.loginpage{
+
+.projects {
     display: flex;
     justify-content: space-around;
     width: 100%;
     height: 300px;
     align-items: center;
 }
-.coffee{
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 300px;
-    align-items: center;
-}
 
 
 
-.discription{
+
+.discription {
     display: flex;
     flex-direction: column;
     width: 60%;
@@ -176,52 +267,53 @@ button{
     margin-left: 100px;
     padding: 0px 50px;
     padding-top: 20px;
-    line-height: 30px;   
+    line-height: 30px;
 }
-.link{
-    margin-top: 1rem;
+
+
+
+.disheadline {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.discription-text {
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    margin-top: 30px;
     height: 100%;
     a{
         text-decoration: none;
         color: $secondaryColor;
         font-size: 1.5rem;
     }
+    a:after{
+        content:2192;
+    }
 }
 
-.disheadline{
-    font-size: 1.5rem;
-    font-weight: 300;
-}
-.discription-text{
-    font-size: 1rem;
-    font-weight: 200;
-    letter-spacing: 2px;
-    margin-top: 30px;
-    height: 100%;
-}
-
-.thumbnail{
+.thumbnail {
     width: 320px;
     height: 231px;
     border-radius: 15px;
     filter: drop-shadow(7px -2px 4px rgba(135, 135, 135, 0.25));
 }
-.batman{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: 300px;
-        align-items: center;
+
+@media screen and (max-width:500px) {
+    .projects{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .discription{
+        width: 100%;
+        height: 100vh;
+        background-color: #17a775;
+    }
 }
-.coffee{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: 300px;
-        align-items: center;
-}
+
 //About Section Start
-.content2{
+.content2 {
     display: flex;
     width: 100vw;
     height: 100vh;
@@ -231,22 +323,22 @@ button{
 
 
 
-.image{
+.image {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.image img{
+.image img {
     height: 631px;
-  width: 420px;
-  border: 5px solid #ffff;
-  border-radius: 30px;
-  filter: drop-shadow(20px 20px 5px #403c3c);
+    width: 420px;
+    border: 5px solid #ffff;
+    border-radius: 30px;
+    filter: drop-shadow(20px 20px 5px #403c3c);
 }
 
-.text{
+.text {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -255,23 +347,24 @@ button{
     justify-content: space-evenly;
 }
 
-.abt-text{
+.abt-text {
     text-align: left;
     width: 100%;
     padding: 0 2rem;
-    font-weight: 300  ;
+    font-weight: 300;
     color: $secondaryColor;
 }
 
-.cta2{
+.cta2 {
 
     font-weight: 700;
     width: 200px;
     height: 90px;
     font-size: 1.5rem;
-    margin-right:30% ;
+    margin-right: 30%;
 }
-.cta2:hover{
+
+.cta2:hover {
     background-color: transparent;
     border: 2px solid $primarycolor;
     color: $primarycolor;
@@ -279,7 +372,7 @@ button{
 }
 
 // Expierence Section
-.content3{
+.content3 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -289,7 +382,8 @@ button{
     padding: 2rem 0rem;
     color: $secondaryColor;
 }
-.heading{
+
+.heading {
     width: 100%;
     align-items: center;
     display: flex;
@@ -298,7 +392,7 @@ button{
     letter-spacing: 3px;
 }
 
-.underline{
+.underline {
     background-color: $secondaryColor;
     height: 5px;
     margin-top: 4px;
@@ -308,7 +402,7 @@ button{
 }
 
 
-.accordian1{
+.accordian1 {
     background-color: $primarycolor;
     width: 800px;
     height: 80px;
@@ -316,25 +410,53 @@ button{
     padding: 0.6rem 4rem;
 }
 
-.accordianTitle1{
+.accordianTitle1 {
     font-size: 1rem;
 }
-.company{
+
+.company {
     float: left;
-    font-weight: 400;    
+    font-weight: 400;
 }
-.duration{
+
+.duration {
     float: right;
     padding-left: 8rem;
     font-weight: 300;
     font-style: italic;
 }
 
-.accordianContent1 span{
+.accordianContent1 span {
     display: flex;
     width: 100%;
-    p{
+
+    p {
         width: 100%;
         padding-top: 6px;
+    }
+}
+
+// Projects page css
+
+.pageHeading {
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        text-align: center;
+        color: $secondaryColor;
+        padding: 3px;
+    }
+
+    .underline {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    body{
+        overflow-x: hidden;
     }
 }
