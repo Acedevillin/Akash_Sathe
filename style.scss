@@ -113,7 +113,6 @@ button {
     align-self: center;
     cursor: pointer;
 }
-
 .cta {
     font-weight: 700;
     width: 200px;
@@ -121,6 +120,8 @@ button {
     font-size: 1.5rem;
     margin-left: 50%;
 }
+
+
 
 .cta:hover {
     background-color: transparent;
@@ -483,7 +484,7 @@ button {
     }
  
     .underline1 {
-        width: 150px;
+        width: 120px;
     }
  
     .mywork {
@@ -545,6 +546,33 @@ button {
         font-size: 1rem;
         margin-right: 0;
     }
-   
+    //Expierence Section
+    .heading{
+        h1{
+            font-size: 16px;
+        }
+        
+    }
+    .underline{
+        width: 150px;
+    }
+    .accordian1{
+        width: 600px;
+        height: 60px;
+        padding: 0.3rem 2rem ;
+    }
+    .accordianTitle1{
+        h2{font-size: 16px;}
+        
+    }
+    .duration{
+        padding-left: 0rem;
+    }
+    .accordianContent1{
+        p{
+            font-size: 0.6rem;
+        }
+    }
+
 }
 

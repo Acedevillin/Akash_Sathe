@@ -565,7 +565,7 @@ button {
     font-size: 12px;
   }
   .underline1 {
-    width: 150px;
+    width: 120px;
   }
   .mywork {
     padding: 0px 0px 0px 0px;
@@ -628,6 +628,26 @@ button {
     height: 63px;
     font-size: 1rem;
     margin-right: 0;
+  }
+  .heading h1 {
+    font-size: 16px;
+  }
+  .underline {
+    width: 150px;
+  }
+  .accordian1 {
+    width: 600px;
+    height: 60px;
+    padding: 0.3rem 2rem;
+  }
+  .accordianTitle1 h2 {
+    font-size: 16px;
+  }
+  .duration {
+    padding-left: 0rem;
+  }
+  .accordianContent1 p {
+    font-size: 0.6rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -70,7 +70,7 @@ t2.from('.heading', { opacity: 0, y: 50, duration: 1.5 });
 let t3 = gsap.timeline({
   scrollTrigger: {
     trigger: '.thumbnail',
-    start: 'top center',
+    start: 'bottom center',
     end: 'bottom bottom',
     scrub: 1,
     snap: {
@@ -100,7 +100,7 @@ const download = document
 //Expierence Section Animation
 let t4 = gsap.timeline({
   scrollTrigger: {
-    trigger: '.accordian1',
+    trigger: '.heading',
     start: 'top center',
     end: 'bottom bottom',
     scrub: 1,
