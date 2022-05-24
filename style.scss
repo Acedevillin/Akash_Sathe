@@ -386,7 +386,7 @@ button {
         margin: 0;
         padding: 0;
         position: absolute;
-        height: 85vh;
+        height: 90vh;
         right: 0%;
         top: 14vh;
         display: flex;
@@ -440,6 +440,7 @@ button {
  
     .context {
         align-content: center;
+        height: 85vh;
     }
  
     .headline-text {
@@ -576,3 +577,31 @@ button {
 
 }
 
+@media screen and (max-width: 500px) {
+    .headline-text{
+        padding: 24% 6% 6% 6%;
+    }
+    .headline{
+        font-size: 1.8rem;
+    }
+    .mywork{
+        height: 200vh;
+    }
+    .projects{
+        height: auto;
+    }
+    .heading{
+        padding-bottom: 8%;
+    }
+    .projects{
+        padding-top: 8%;
+    }
+    .content2{
+        justify-content: center;
+        margin-top: 15%;
+        height: 111vh;
+    }
+    .accordian1{
+        width: 360px;
+    }
+}

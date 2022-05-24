@@ -9,11 +9,13 @@ const navSlide = () => {
   const burger = document.querySelector('.burger');
   const nav = document.querySelector('.nav-items');
   const navLinks = document.querySelectorAll('.nav-items li');
+  const scrollLock = document.querySelector('body');
 
   burger.addEventListener('click', () => {
     nav.classList.toggle('nav-active');
     tween.play(1);
     burger.classList.toggle('toggle');
+    scrollLock.style.overflow = 'hidden';
   });
   //burger animations
 };
