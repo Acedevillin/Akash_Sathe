@@ -1,3 +1,6 @@
+body{
+    overflow: hidden;
+}
 .wrapper2{
     width: 950px;
     margin: 50px;
@@ -73,4 +76,25 @@
 
 .accordTitle.active + .accordContent{
     max-height: auto;
+}
+@media screen and (max-width:768px) {
+    .wrapper2{
+        width: 688px;
+    }
+    .accordn{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+        .wrapper2{
+            width: 450px;
+            margin: 10px;
+        }
+        .accordn{
+            width: 400px;
+        }
+        .accordTitle h2{
+            font-size: 1rem;
+        }
 }
