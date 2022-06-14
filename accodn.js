@@ -22,5 +22,5 @@ accordnheader.forEach((accordnheader) => {
 
 const btn = document.querySelector('.button1');
 btn.addEventListener('click', () => {
-  window.open('./Akash_Sathe.pdf', '_blank');
+  window.open('./Akash Sathe CV(14-06)_compressed.pdf', '_blank');
 });

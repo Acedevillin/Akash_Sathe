@@ -96,7 +96,7 @@ t3.from('.thumbnail', { opacity: 0, y: 50, duration: 1.5, stagger: 1.5 })
 const download = document
   .querySelector('.cta2')
   .addEventListener('click', () => {
-    window.open('./Akash_Sathe.pdf', '_blank');
+    window.open('./Akash Sathe CV(14-06)_compressed.pdf', '_blank');
   });
 
 //Expierence Section Animation
